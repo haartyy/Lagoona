@@ -587,4 +587,83 @@ fieldset {
 }
 
 /* Contacts */
+.contacts-div-flex {
+  width: 1168px;
+  height: 618px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  align-items: center;
+}
 
+.contacts-list-item {
+  margin-left: 45px;
+  flex-wrap: wrap;
+  width: 375px;
+  background-image: url(/img/Rectangle\ 21.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  margin-bottom: 25px;
+}
+
+.title-contacts {
+  margin: 0;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contact-location-text {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  width: 230px;
+}
+
+.tel-contacts {
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+  width: 230px;
+}
+
+.mail-contacts a {
+  color: #CC9933;
+}
+
+.mail-contacts p {
+  color: #999999;
+}
+
+.contact-graphik-text {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  width: 230px;
+}
+
+.btn-contacts {
+  margin-left: 45px;
+  padding: 27px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.contacts-img {
+  margin-left: 50px;
+}
+
+/* Footer */

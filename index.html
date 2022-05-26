@@ -253,7 +253,7 @@
           </h2>
           <ul class="hotels-list list-reset flex">
             <li class="hotels-item">
-              <img src="/img/23.png" alt="" class="hotels">
+              <img src="/img/23.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">4&nbsp;698&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -277,7 +277,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/24.png" alt="" class="hotels">
+              <img src="/img/24.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">5&nbsp;148&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -301,7 +301,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/26.png" alt="" class="hotels">
+              <img src="/img/26.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">6&nbsp;254&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -325,7 +325,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/29-1.png" alt="" class="hotels">
+              <img src="/img/29-1.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">6&nbsp;320&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -349,7 +349,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/30.png" alt="" class="hotels">
+              <img src="/img/30.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">6&nbsp;457&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -373,7 +373,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/31.png" alt="" class="hotels">
+              <img src="/img/31.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">6&nbsp;320&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -397,7 +397,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/27.png" alt="" class="hotels">
+              <img src="/img/27.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">6&nbsp;505&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -421,7 +421,7 @@
               </a>
             </li>
             <li class="hotels-item">
-              <img src="/img/29.png" alt="" class="hotels">
+              <img src="/img/29.png" alt="" class="hotels-img">
               <div class="price-rating flex">
                 <p class="hotels-price">
                   <span class="price-from">от&nbsp;</span><span class="price">6&nbsp;824&nbsp;р&nbsp;</span><span class="price-night">/ ночь</span>
@@ -455,55 +455,71 @@
 
       <!-- Want tour -->
       <section class="section-offset">
-        <div class="want-tour container">
-          <h2 class="header-section">
+        <div class="container want-tour">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+            <fieldset class="form-inputs">
+              <legend><h2 class="header-section header-want-tour">Хочу тур</h2></legend>
+              <div class="white-div flex">
+                <label class="form-label">
+                  <p class="form_p">
+                    Город вылета
+                  </p>
+                  <select class="form-input" name="from-city">
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Мурманск">Мурманск</option>
+                    <option value="Самара">Самара</option>
+                    <option value="Воронеж">Воронеж</option>
+                  </select>
+                </label>
+                <label class="form-label">
+                  <p class="form_p">
+                    Страна
+                  </p>
+                  <select class="form-input" name="country">
+                    <option value="Австралия">Австралия</option>
+                    <option value="Испания">Испания</option>
+                    <option value="Италия">Италия</option>
+                    <option value="ОАЭ">ОАЭ</option>
+                    <option value="Франция">Франция</option>
+                  </select>
+                </label>
+                <label class="form-label">
+                  <p class="form_p">
+                    Дата прибытия
+                  </p>
+                  <input class="form-input" type="date" name="date">
+                </label>
+                <label class="form-label">
+                  <p class="form_p">
+                    Ночей
+                  </p>
+                  <input class="form-input" type="number" name="nights" min="1" max="21" value="6">
+                </label>
+                <label class="form-label">
+                  <p class="form_p">
+                    Туристы
+                  </p>
+                  <input class="form-input" type="number" name="count-people" min="1" max="6" value="1">
+                </label>
+                <button class="btn-reset form-btn-want">
+                  Найти
+                </button>
+              </div>
+            </fieldset>
+          </form>
+          <!-- <h2 class="header-section">
             Хочу тур
           </h2>
-          <ul class="want-tour-lis list-reset">
-            <li class="want-tour-item">
-              <p class="title-want-tour-item-btn-arrow-down">
-                Город вылета
-              </p>
-              <button class="btn-reset want-tour-btn">
-                Санкт-Петербург
-              </button>
-            </li>
-            <li class="want-tour-item">
-              <p class="title-want-tour-item-btn-arrow-down">
-                Страна
-              </p>
-              <button class="btn-reset want-tour-btn">
-                Австралия
-              </button>
-            </li>
-            <li class="want-tour-item">
-              <p class="title-want-tour-item-btn">
-                Дата прибытия
-              </p>
-              <button class="btn-reset want-tour-btn calendar-btn">
-                18.10.2021
-              </button>
-            </li>
-            <li class="want-tour-item">
-              <p class="title-want-tour-item-btn-double-arrow">
-                Ночей
-              </p>
-              <button class="btn-reset want-tour-btn">
-                6
-              </button>
-            </li>
-            <li class="want-tour-item">
-              <p class="title-want-tour-item-btn-double-arrow">
-                Туристы
-              </p>
-              <button class="btn-reset want-tour-btn">
-                2
-              </button>
-            </li>
-          </ul>
-          <button class="btn-reset header-2-btn">
-            Найти
-          </button>
+          <form action="https://jsonplaceholder.typicode.com/posts">
+            <select name="from-city" id="#">
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Мурманск">Мурманск</option>
+              <option value="Самара">Самара</option>
+              <option value="Воронеж">Воронеж</option>
+            </select>
+          </form> -->
         </div>
       </section>
 

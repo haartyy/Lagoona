@@ -278,7 +278,7 @@ body {
   align-items: flex-start;
   padding-left: 40px;
   padding-bottom: 40px;
-  background-image: url(../img/luxe-img.jpg);
+  background-image: url(../img/luxe-img.png);
   background-repeat: no-repeat;
 }
 
@@ -428,10 +428,6 @@ body {
   margin-right: 23px;
 }
 
-.hotels {
-  margin-bottom: 36px;
-}
-
 .price-from {
   margin: 0;
   margin-right: 4px;
@@ -460,6 +456,7 @@ body {
 }
 
 .price-rating {
+  margin-top: 36px;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -526,3 +523,68 @@ body {
   background-position: right center;
   padding-right: 20px;
 }
+
+/* Want tour */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.want-tour {
+  background: #E9E9E9;
+  border-radius: 15px;
+  width: 1170px;
+  height: 274px;
+}
+
+.header-want-tour {
+  padding-top: 40px;
+}
+
+.white-div {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  height: 106px;
+}
+
+.form-p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.form-input {
+  border: none;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.form-label {
+  padding-left: 40px;
+  background-image: url(/img/Rectangle\ 3.svg);
+  background-repeat: no-repeat;
+  background-size: 1px 50px;
+  background-position: right center;
+  padding-right: 20px;
+}
+
+.form-btn-want {
+  margin-left: 80px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 13px 30px;
+}
+
+/* Contacts */
+

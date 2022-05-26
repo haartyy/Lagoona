@@ -667,3 +667,63 @@ fieldset {
 }
 
 /* Footer */
+.footer-div {
+  width: 1170px;
+  height: 340px;
+  background: #333333;
+  border-radius: 15px;
+  background-image: url(/img/Frame\ 11.svg);
+  background-repeat: no-repeat;
+  background-position: 738px 113px;
+}
+
+.footer-left-content {
+  padding-top: 45px;
+  padding-left: 50px;
+  margin-right: 100px;
+}
+
+.footer-text-left {
+  width: 350px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.link-footer-text {
+  color: #CC9933;
+}
+
+.footer-center-content {
+  padding-top: 45px;
+  margin-right: auto;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-contact-list {
+  width: 160px;
+  flex-direction: column;
+  color: #CC9933;
+}
+
+.footer-tel-item {
+  margin-bottom: 15px;
+}
+
+.footer-social-list {
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-bottom: 20px;
+}
